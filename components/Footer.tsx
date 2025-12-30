@@ -16,16 +16,8 @@ export const Footer: React.VFC<Props> = ({ fullWidth }) => {
     >
       <hr className="border-gray-200 dark:border-gray-600" />
       <div className="my-4 text-sm leading-6">
-        <div className="flex flex-wrap justify-between align-baseline">
+        <div className="flex justify-center align-baseline">
           <p>© {BLOG.author}</p>
-          <a
-            href={BLOG.repository}
-            target="_blank"
-            rel="noreferrer"
-            className="underline hover:text-black dark:hover:text-gray-100"
-          >
-            Source Code
-          </a>
         </div>
       </div>
     </div>

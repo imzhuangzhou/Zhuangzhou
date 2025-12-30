@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run tsc:*)",
+      "Bash(npm run lint)",
+      "Bash(yarn install)",
+      "Bash(npm install)",
+      "Bash(npm install:*)",
+      "Bash(npx eslint:*)",
+      "Bash(npm audit:*)",
+      "Bash(git add:*)",
+      "Bash(find /Users/jing/Documents/Github/MyBlog -type f \\\\\\( -name \"*.tsx\" -o -name \"*.ts\" -o -name \"*.jsx\" -o -name \"*.js\" -o -name \"*.json\" \\\\\\) -exec grep -l \"\\\\.site\" {} \\\\;:*)",
+      "Bash(npm run build:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nstyle: Update site title and branding\n\n- Change header title to ''jingzhang''\n- Remove Source Code link from footer\n- Update blog title and author in config\n- Add accessible CDN configurations\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n\\)\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

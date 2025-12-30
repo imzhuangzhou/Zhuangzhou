@@ -18,14 +18,15 @@ type Props =
 
 export const TagTabItem: React.VFC<Props> = ({ tagKey, selected, ...rest }) => {
   const tagSlug = isTagSlug(tagKey) ? tagKey : undefined;
-  if (!tagSlug) return null;
-
+  
   const linkUrl = useMemo(() => {
-    if (selected || !("count" in rest)) {
+    if (!tagSlug || selected || !("count" in rest)) {
       return "/";
     }
     return `/tags/${encodeURIComponent(tagSlug)}`;
   }, [rest, selected, tagSlug]);
+
+  if (!tagSlug) return null;
 
   const tagData = getTagDataBySlug(tagSlug);
   return (

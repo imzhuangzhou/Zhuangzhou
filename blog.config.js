@@ -2,8 +2,8 @@
  * @type {import('~/types').BlogConfig}
  */
 const BLOG = {
-  title: "ZhuangZhou's Blog",
-  author: "ZhuangZhou",
+  title: "jingzhang's blog",
+  author: "jingzhang",
   email: "imjingzhang@qq.com",
   link: "https://jingzhang.site",
   externalLink: "", // make redirect link to /link page
